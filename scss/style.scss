@@ -1,0 +1,30 @@
+@import '_color.scss';
+
+@import '_heading.scss';
+
+@import '_mixin.scss';
+
+@import '_link.scss';
+
+@import '_media.scss';
+
+@import '_header.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+
+.wraper {
+    background: url("../images/svg/Symbol.svg") no-repeat top  center ,
+    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    height: 2000px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; 
+}
+
+

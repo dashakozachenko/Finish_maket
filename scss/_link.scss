@@ -1,0 +1,55 @@
+a {
+    color: $regular;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $accent;
+    cursor: pointer;
+}
+
+.active {
+    background: $accent;
+    border-radius: 8px;
+    color: $white;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $white;
+    padding: 5px 7px 5px 7px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        color: $white;
+    }
+
+    &:active {
+        background: $accent;
+        border-radius: 8px;
+        color: $white;
+    }   
+}
+
+.link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+
+        &:hover {
+            color: $white;
+            border-bottom: 2px solid $white;
+        }
+
+        &:active {
+            color: $accent;
+            border-bottom: 2px solid $accent;
+
+        }
+}
