@@ -1,19 +1,435 @@
-@media (max-width:1920px){
+@media (max-width:1600px){
 
-}
+    .customer-oriented{
+        &__container {
+            max-width: 1360px;
+        }
 
-@media (max-width:1440px) {
+        &__description {
+            max-width: 581px;
+            padding: 43px 0 43px 60px;
+        }    
+    }
 
-}
+    .services {
+        &__container {
+            max-width: 1380px;
+        }
+    }
 
-@media (max-width:1024px) {
+    .slider {
+        &__container {
+            max-width: 1380px;
+        }
+    }
 
-}
+    .companies__item-hillel , .companies__item-3dlook , .companies__item-infatek , .companies__item-ultimate  {
+        border-radius: 0; 
+    }
+    .companies {
+        padding: 60px 0 0 0;
+    }
 
-@media (max-width:768px) {
-
-}
-
-@media (max-width:375px) {
+    .publication__container {
+        max-width: 1320px;
+    }
     
 }
+
+@media (max-width:1380px) {
+    .header {
+        padding: 50px 60px 0 60px;
+    }
+
+    .customer-oriented{
+
+        &__container {
+            max-width: 904px;
+        }
+
+        &__description {
+            max-width: 405px;
+            padding: 9px 0 9px 60px;
+        }    
+    }
+
+    .slider {
+        &__container {
+            max-width: 904px;
+        }
+    }
+
+    .companies {
+        padding: 60px 0 0 0;
+    } 
+    
+    .publication__container {
+        max-width: 904px;
+    }
+}
+
+@media (max-width:904px) {
+    .header {
+        padding: 50px 0 0 60px;
+
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+
+        &__logo {
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+        }
+
+        &__contact {
+            justify-content: flex-start;
+        }
+
+    }
+
+    .menu__list {
+        justify-content: flex-start;
+    }
+
+    .customer-oriented {
+
+        &__container {
+            padding: 60px 60px;
+        }
+        &__wrap {
+            flex-direction: column;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        &__list {
+            flex-direction: row;
+            padding-right: 0;
+            padding-bottom: 60px;
+            border: none;
+            overflow-x: scroll;
+            justify-content: flex-start;
+        }
+
+        &__description {
+            padding: 0px;
+            margin-top: 60px;
+        }
+
+        &__item {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        &__description {
+            overflow-x:hidden;
+            white-space: normal;
+            max-width: 648px;
+        }
+    }
+
+    .services {
+        &__card {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .slider {
+        &__container {
+            max-width: 648px;
+        }
+
+        &__block {
+            flex-direction: column;
+        }
+
+        &__icon {
+            max-width: 100%;
+            border-radius: 12px 12px 0px 0px;
+        }
+    }
+    
+    .companies {
+        padding: 60px 0 0 0;
+        &__cards {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 120px 120px 120px 120px;
+        }
+    }
+
+    .publication{
+        &__container {
+            max-width: 648px;
+        }
+
+        &__card {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            &__wrap:last-child {
+                grid-column-start: -3;
+                grid-column-end: -1;
+            }
+        }
+    }
+}
+
+@media (max-width:648px) {
+    .header {
+        padding: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .header {
+        &__wrap {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__logo {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 15px;
+        }
+        
+        &__icon {
+            max-width: 70px;
+        }
+
+        &__contact {
+            background-color: $mobile-menu;
+            justify-content: space-between;
+            padding: 10px 15px ;
+        }
+
+        &__btn {
+            border: none;
+            background: none;
+            padding: 0;
+        }
+    }
+
+    .contact {
+
+        &__menu {
+            justify-content: flex-end;
+        }
+
+        &__address {
+            display: none;
+        }
+
+        &__facebook {
+            margin-left: 0;
+        }
+
+        &__phone {
+            margin-left: 0px;
+           
+        }
+    
+    }
+
+    .contact__lang::after , .contact__address::after , .contact__phone::after {
+        display: none;
+    }
+
+    .facebook {
+        display: none;
+    }
+
+    .menu {
+        &__close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: block;
+            border: none;
+            background: none;
+            
+
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__item {
+            margin: 0px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        &__link {
+            color: $regular;
+            display: block;
+            background-color: $bg;
+            text-align: center;
+            border-radius: 12px;
+            padding: 7px 0 7px 0;
+
+            &:active {
+                color: $accent;
+            }
+
+            &:hover {
+                color: $accent;
+                background-color: $separator;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu {
+        background-color: $white;
+        position: fixed;
+        padding: 64px 12px 0 12px;
+        bottom: 0;
+        width: 96%;
+        left: 8px;
+        right: 16px;
+        border-radius: 12px 12px 0px 0px;
+        display: none;
+
+        &--open {
+            display: block;
+        }
+    } 
+    
+    .button {
+        display: block;
+    }
+
+    .customer-oriented {
+        padding: 60px 0 30px;
+
+        &__container {
+            padding: 0 30px;
+        }
+    }
+
+    .services {
+        padding: 0px 30px;
+
+        &__card {
+            grid-template-columns: 1fr;
+            grid-template-rows: 294px;
+            grid-gap: 30px;
+        }
+
+        &__title {
+            padding: 10px 0 30px;
+        }
+    }
+
+    .screen {
+        &__container {
+            max-width: 315px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .slider {
+        &__container {
+            max-width: 315px;
+        }
+    }
+
+    .companies {
+        padding: 60px 0 0 0;
+
+        &__container {
+            width: 100%;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr;
+            grid-template-rows: 120px 120px 120px 120px 120px;
+        }
+        &__item-adtelligent {
+            display: none;
+        }
+        &__item-clickky {
+            display: none;
+        }
+        &__item-ecoleasing {
+            display: none;
+        }
+        &__item-infatek {
+            display: none;
+        }
+        &__item-sity {
+            display: none;
+        }
+        &__item-art {
+            display: none;
+        }
+        &__item-ultimate {
+            display: none;
+        }
+    }
+    .publication{
+        &__container {
+            max-width: 315px;
+        }
+
+        &__card {
+            grid-template-columns: 1fr;
+            &__wrap:last-child {
+                grid-column-start: 1;
+            }    
+        }
+    } 
+
+    .footer{
+        &__rect {
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__copyright {
+            position: absolute;
+            bottom: 0;
+         }
+    }
+       
+    .contact-address {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contact__address-map {
+        flex-direction: column;
+    }
+
+    .contact__socials {
+        flex-direction: column; 
+        margin-bottom: 30px;
+    }
+
+    .contact__link{
+        margin-bottom: 10px;
+        &::after {
+            display: none;
+        }
+    }
+      
+    .contact-phone {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+}
+

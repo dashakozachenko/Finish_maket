@@ -1,13 +1,16 @@
 .header {
     max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 60px 0px 60px;
+    padding: 50px 160px 0 160px;
 
     &__wrap {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 130px 1fr;
+
+    }
+
+    &__logo {
+        grid-row-start: 1;
+        grid-row-end: 3;
 
     }
 
@@ -19,18 +22,27 @@
     &__contact {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+
     }
 }
 
-.container {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .menu {
+    &__wrap {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__close {
+        display: none;
+    }
+
     &__list {
         display: flex;
         flex-direction: row;
@@ -45,12 +57,6 @@
             margin-right: 0px;
         }
     }
-}
-.header {
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 60px 0px 60px;
 }
 
 .container {
@@ -123,4 +129,9 @@
     &:hover {
         fill: #F0145A;
     }
+    
+}
+
+.button {
+    display: none;
 }

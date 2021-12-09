@@ -1,4 +1,15 @@
-h1{
+.text-hero{
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+    color: white;
+    background: $gradient-red-text-uround;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.title {
     font-size: 38px;
     line-height: 46px;
     font-weight: 700;
@@ -7,6 +18,13 @@ h1{
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.text {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+    color: $text;
 }
 
 h2 {
@@ -36,11 +54,31 @@ h5 {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    color: $main;
+    color: $text;
 }
 
 p {
     font-size: 16px;
     line-height: 26px;
     color: #000000;
+}
+
+.span {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text;
+}
+
+.text-about {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: $text;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 20px;
+    color: $text;
 }
