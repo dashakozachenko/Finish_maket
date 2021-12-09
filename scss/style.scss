@@ -2,8 +2,6 @@
 
 @import '_heading.scss';
 
-@import '_mixin.scss';
-
 @import '_link.scss';
 
 @import '_media.scss';
@@ -27,4 +25,7 @@ body {
     border-bottom-right-radius: 12px; 
 }
 
+.screen__title {
+    color: $white;
+}
 
