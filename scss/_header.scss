@@ -135,3 +135,57 @@
 .button {
     display: none;
 }
+
+.header__about{
+    &__wrap {
+        grid-template-columns: 318px 1fr;
+    }
+
+    &__logo {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        &__link {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &__icon {
+        margin-right: 4px;
+    }
+}
+
+.contact__about {
+    &__lang__link {
+         color: $text;
+    }
+
+    &__address {
+        color: $text;
+    }
+
+    &__phone {
+        color: $text;
+    }
+}
+
+.contact__lang__link.btn-lang.active {
+    color: $white;
+}
+
+.fb__about {
+    width: 24px;
+    height: 24px;
+    fill: $text;
+
+    &:hover {
+        fill: #F0145A;
+    }
+}
+
+.burger {
+    stroke: $main;
+}
