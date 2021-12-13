@@ -1,6 +1,12 @@
 .header {
     max-width: 1920px;
-    padding: 50px 160px 0 160px;
+    padding: 50px 0 0;
+
+    &__container {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &__wrap {
         display: grid;
@@ -29,7 +35,11 @@
     &__menu {
         display: flex;
         flex-direction: column;
+    }
 
+    &__btn:active {
+        background: $separator;
+        border-radius: 8px;
     }
 }
 
@@ -57,12 +67,6 @@
             margin-right: 0px;
         }
     }
-}
-
-.container {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact {

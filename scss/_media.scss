@@ -1,5 +1,9 @@
 @media (max-width:1600px){
 
+    .header__container {
+        max-width: 1320px;
+    }
+
     .customer-oriented{
         &__container {
             max-width: 1360px;
@@ -11,16 +15,8 @@
         }    
     }
 
-    .services {
-        &__container {
-            max-width: 1380px;
-        }
-    }
-
-    .slider {
-        &__container {
-            max-width: 1380px;
-        }
+    .container {
+        max-width: 1380px;
     }
 
     .companies__item-hillel , .companies__item-3dlook , .companies__item-infatek , .companies__item-ultimate  {
@@ -85,20 +81,14 @@
         }    
     }
 
-    .slider {
-        &__container {
-            max-width: 904px;
-        }
-    }
-
     .companies {
         padding: 60px 0 0 0;
     } 
-    
+
     .publication__container {
         max-width: 904px;
     }
-
+    
     .main__container {
         max-width: 904px;
     }
@@ -125,6 +115,10 @@
     }
 
     .footer__about__container {
+        max-width: 904px;
+    }
+
+    .container {
         max-width: 904px;
     }
 }
@@ -200,10 +194,6 @@
     }
 
     .slider {
-        &__container {
-            max-width: 648px;
-        }
-
         &__block {
             flex-direction: column;
         }
@@ -224,9 +214,8 @@
 
     .publication{
         &__container {
-            max-width: 648px;
+             max-width: 648px;
         }
-
         &__card {
             grid-template-columns: 1fr 1fr;
             grid-gap: 30px;
@@ -305,9 +294,13 @@
         padding: 30px 0 0;
         position: relative;
     }
-    .footer__copyright {
+    .footer__about__copyright {
         position: absolute;
         bottom: 0;
+    }
+
+    .container {
+        max-width: 648px;
     }
 
 }
@@ -385,8 +378,6 @@
             display: block;
             border: none;
             background: none;
-            
-
         }
 
         &__list {
@@ -418,6 +409,7 @@
                 color: $accent;
                 background-color: $separator;
                 cursor: pointer;
+                border: none;
             }
         }
     }
@@ -427,14 +419,14 @@
         position: fixed;
         padding: 64px 12px 0 12px;
         bottom: 0;
-        width: 96%;
+        width: 98%;
         left: 8px;
-        right: 16px;
         border-radius: 12px 12px 0px 0px;
         display: none;
 
         &--open {
             display: block;
+            z-index: 1;
         }
     } 
     
@@ -451,8 +443,6 @@
     }
 
     .services {
-        padding: 0px 30px;
-
         &__card {
             grid-template-columns: 1fr;
             grid-template-rows: 294px;
@@ -613,6 +603,10 @@
 
     .contact__socials.contact__about__socials {
         margin-bottom: 0px;
-    }  
+    } 
+    
+    .container {
+        max-width: 315px;
+    }
 }
 
